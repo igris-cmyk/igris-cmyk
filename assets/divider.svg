@@ -1,0 +1,37 @@
+<svg width="1280" height="130" viewBox="0 0 1280 130" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Always shipping footer divider</title>
+  <desc id="desc">A dark futuristic divider with cyan and teal signal lines.</desc>
+  <defs>
+    <linearGradient id="line" x1="80" y1="64" x2="1200" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#22D3EE" stop-opacity="0.72"/>
+      <stop offset="0.52" stop-color="#14B8A6" stop-opacity="0.78"/>
+      <stop offset="0.82" stop-color="#8B5CF6" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-100%" width="120%" height="300%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .font { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .mono { font-family: Fira Code, JetBrains Mono, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="130" rx="20" fill="#020617"/>
+  <path d="M80 65H1200" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
+  <path d="M214 65L254 35H390" stroke="#22D3EE" stroke-opacity="0.28" stroke-width="2"/>
+  <path d="M1066 65L1026 95H890" stroke="#14B8A6" stroke-opacity="0.28" stroke-width="2"/>
+  <circle cx="214" cy="65" r="5" fill="#22D3EE" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1066" cy="65" r="5" fill="#14B8A6" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.35;1" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="499" y="39" width="282" height="52" rx="26" fill="#07111D" stroke="#22D3EE" stroke-opacity="0.28"/>
+  <text class="mono" x="546" y="71" fill="#E2E8F0" font-size="18" font-weight="700">Always shipping.</text>
+</svg>
